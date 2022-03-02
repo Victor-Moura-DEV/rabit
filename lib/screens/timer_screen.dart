@@ -139,8 +139,8 @@ class _TimerScreenState extends State<TimerScreen> {
         GestureDetector(
           onTap: () {},
           child: Container(
-            width: getProportionateScreenWidth(60),
-            height: getProportionateScreenHeight(70),
+            width: 50,
+            height: 60,
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage('assets/images/clock.png'),
@@ -154,8 +154,8 @@ class _TimerScreenState extends State<TimerScreen> {
 
   SizedBox BuildCenterCountDown(int minuts, int secondsDisplayed) {
     return SizedBox(
-      width: getProportionateScreenWidth(280),
-      height: getProportionateScreenHeight(280),
+      width: 250,
+      height: 250,
       child: Stack(
         fit: StackFit.expand,
         children: [
