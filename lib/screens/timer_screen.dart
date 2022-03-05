@@ -29,7 +29,6 @@ class _TimerScreenState extends State<TimerScreen> {
             setState(
               () {
                 seconds--;
-                print(seconds);
               },
             );
           } else {
@@ -46,7 +45,6 @@ class _TimerScreenState extends State<TimerScreen> {
     void stopTimer({bool? reset}) {
       if (reset == true) {
         resetTimer();
-        print(reset);
       } else {
         timer?.cancel();
       }
@@ -140,7 +138,7 @@ class _TimerScreenState extends State<TimerScreen> {
           onTap: () {},
           child: Container(
             width: 50,
-            height: 60,
+            height: 58,
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage('assets/images/clock.png'),
@@ -236,8 +234,6 @@ class _TimerScreenState extends State<TimerScreen> {
             onTap: () {
               setState(() {
                 startTimer();
-                // isRunning = !isRunning;
-                // print(isRunning);
               });
             },
             child: Column(

@@ -21,7 +21,6 @@ class _ReminderScreenState extends State<ReminderScreen> {
       hours.add(
         i.toString().padLeft(2, '0'),
       );
-      print(hours);
     }
   }
 
@@ -30,7 +29,6 @@ class _ReminderScreenState extends State<ReminderScreen> {
       minutes.add(
         i.toString().padLeft(2, '0'),
       );
-      print(minutes);
     }
   }
 
@@ -136,6 +134,7 @@ class _ReminderScreenState extends State<ReminderScreen> {
         itemExtent: 50,
         onSelectedItemChanged: (int index) {},
         children: childrenList,
+        selectionOverlay: null,
       ),
     );
   }
